@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D61EF6B1-4034-4044-BB55-9147A5F4FDAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Voz do Povo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F47089E3-AFC2-4BC5-B636-D474FD7B1724</key>
+		<string>https://github.com/lifepicsapp/Voz-do-Povo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Voz do Povo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F47089E3-AFC2-4BC5-B636-D474FD7B1724</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lifepicsapp/Voz-do-Povo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F47089E3-AFC2-4BC5-B636-D474FD7B1724</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F47089E3-AFC2-4BC5-B636-D474FD7B1724</string>
+			<key>IDESourceControlWCCName</key>
+			<string>voz-do-povo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

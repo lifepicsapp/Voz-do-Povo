@@ -22,7 +22,6 @@
     
     CLLocationCoordinate2D coordinate = {obra.latitude, obra.longitude};
     self.coordinate = coordinate;
-    self.leftCalloutAccessoryView = [[UIImageView alloc] initWithImage:obra.imagem];
 }
 
 @end

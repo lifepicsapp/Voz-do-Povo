@@ -26,9 +26,12 @@
     [self personalizaBotaoLocalizacao];
     
     self.mapView.showsUserLocation = YES;
+    self.updated = YES;
     
-    NSMutableArray* arrObras = [NSMutableArray arrayWithCapacity:1];
-    [arrObras addObject:[Obra obraNome:@"Hospital" descricao:@"Novo Hospital de São Caetano" endereco:@"Rua São Caetano 1024" dataInicio:@"02/2014" dataFim:@"08/2015" imagem:@"hospital" status:@"Em andamento" latitude:-23.42166 longitude:-46.4364118]];
+    NSMutableArray* arrObras = [NSMutableArray arrayWithCapacity:3];
+    [arrObras addObject:[Obra obraNome:@"Hospital" descricao:@"Extensão do complexo B do Hospital Infantil Marcia Braido" dataInicio:@"13/01/2014" dataFim:@"08/02/2015" imagem:@"hospital" status:@"Andamento" latitude:-23.622459 longitude:-46.564071]];
+    [arrObras addObject:[Obra obraNome:@"Operação Urbana" descricao:@"Revitalização de esgotos e águas pluviais" dataInicio:@"03/12/2013" dataFim:@"07/05/2014" imagem:@"esgoto" status:@"Andamento" latitude:-23.626351 longitude:-46.567976]];
+    [arrObras addObject:[Obra obraNome:@"Operação Urbana" descricao:@"Recapeamento de asfalto" dataInicio:@"07/02/2014" dataFim:@"08/02/2014" imagem:@"recapeamento" status:@"Andamento" latitude:-23.620218 longitude:-46.564758]];
     
     self.arrAnnotations = [NSMutableArray arrayWithCapacity:arrObras.count];
     for (Obra* obra in arrObras)
@@ -36,6 +39,7 @@
         AnnotationView* annotation = [[AnnotationView alloc] init];
         annotation.obra = obra;
         annotation.title = obra.nome;
+        annotation.subtitle = obra.descricao;
         annotation.image = [UIImage imageNamed:@"pin_local"];
         annotation.canShowCallout = YES;
         annotation.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoDark];
@@ -44,10 +48,10 @@
     [self.mapView addAnnotations:self.arrAnnotations];
     
     MKCoordinateRegion region;
-    region.center = CLLocationCoordinate2DMake(-23.553602, -46.63221);
+    region.center = CLLocationCoordinate2DMake(-23.624002, -46.565666);
     MKCoordinateSpan span;
-    span.latitudeDelta  = 0.05;
-    span.longitudeDelta = 0.05;
+    span.latitudeDelta  = 0.009;
+    span.longitudeDelta = 0.009;
     region.span = span;
     [self.mapView setRegion:region animated:YES];
 }
@@ -104,7 +108,6 @@
     {
         self.updated = YES;
         [self removeAviso];
-        [self.mapView setCenterCoordinate:self.mapView.userLocation.coordinate animated:YES];
     }
 }
 

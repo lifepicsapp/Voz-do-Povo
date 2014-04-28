@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblData;
 @property (weak, nonatomic) IBOutlet UILabel *lblTermino;
 @property (weak, nonatomic) IBOutlet UILabel *lblStatus;
-@property (weak, nonatomic) IBOutlet UILabel *lblEndereco;
 @property (weak, nonatomic) IBOutlet UITextView *txtDescricao;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (weak, nonatomic) IBOutlet UIButton *btnRota;

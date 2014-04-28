@@ -22,7 +22,7 @@
     self.mapView.showsUserLocation = YES;
     
     MKCoordinateRegion region;
-    region.center = CLLocationCoordinate2DMake(-23.553602, -46.63221);
+    region.center = CLLocationCoordinate2DMake(-23.624002, -46.565666);
     MKCoordinateSpan span;
     span.latitudeDelta  = 0.05;
     span.longitudeDelta = 0.05;
@@ -116,7 +116,6 @@
     {
         self.updated = YES;
         [self removeAviso];
-        [self.mapView setCenterCoordinate:self.mapView.userLocation.coordinate animated:YES];
     }
 }
 

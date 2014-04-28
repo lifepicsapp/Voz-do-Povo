@@ -12,7 +12,6 @@
 
 @property (nonatomic, strong) NSString* nome;
 @property (nonatomic, strong) NSString* descricao;
-@property (nonatomic, strong) NSString* endereco;
 @property (nonatomic, strong) NSString* dataInicio;
 @property (nonatomic, strong) NSString* dataFim;
 @property (nonatomic, strong) NSString* status;
@@ -20,6 +19,6 @@
 @property (assign) float latitude;
 @property (assign) float longitude;
 
-+(Obra *)obraNome:(NSString*)nome descricao:(NSString*)descricao endereco:(NSString*)endereco dataInicio:(NSString*)dataInicio dataFim:(NSString*)dataFim imagem:(NSString*)nomeImagem status:(NSString*)status latitude:(float)latitude longitude:(float)longitude;
++(Obra *)obraNome:(NSString*)nome descricao:(NSString*)descricao dataInicio:(NSString*)dataInicio dataFim:(NSString*)dataFim imagem:(NSString*)nomeImagem status:(NSString*)status latitude:(float)latitude longitude:(float)longitude;
 
 @end

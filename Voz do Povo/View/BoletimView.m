@@ -16,8 +16,8 @@
 {
     _boletim = boletim;
     
-    self.lblSemestre.text = [NSString stringWithFormat:@"%dº Semestre", _boletim.semestre];
-    
+    self.lblSemestre.text = [NSString stringWithFormat:@"%ldº Semestre", (long)_boletim.semestre];
+
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
 }
@@ -36,8 +36,8 @@
     
     Nota *nota = [self.boletim.notas objectAtIndex:indexPath.item];
     cell.lblDisciplina.text = nota.disciplina;
-    cell.lblNota.text = [NSString stringWithFormat:@"%d", nota.nota];
-    cell.lblFaltas.text = [NSString stringWithFormat:@"%d", nota.faltas];
+    cell.lblNota.text = [NSString stringWithFormat:@"%ld", (long)nota.nota];
+    cell.lblFaltas.text = [NSString stringWithFormat:@"%ld", (long)nota.faltas];
     
     return cell;
 }

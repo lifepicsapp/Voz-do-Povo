@@ -23,8 +23,10 @@
 {
     [super viewWillAppear:animated];
 
-    NSMutableArray* arrOcorrencias = [NSMutableArray arrayWithCapacity:1];
-    [arrOcorrencias addObject:[Ocorrencia ocorrenciaNome:@"Asfalto" descricao:@"Asfalto todo esburacado" endereco:@"Rua São Caetano 245" data:@"20/02/2014" imagem:@"buraco" latitude:-23.42166 longitude:-46.4364118]];
+    NSMutableArray* arrOcorrencias = [NSMutableArray arrayWithCapacity:3];
+    [arrOcorrencias addObject:[Ocorrencia ocorrenciaNome:@"Vias públicas" descricao:@"Buraco aberto levando perigo a carros e pedestres" endereco:@"Rua Picuí, Olímpico, São Caetano do Sul" data:@"20/02/2014" imagem:@"buraco" latitude:-23.625398 longitude:-46.560230]];
+    [arrOcorrencias addObject:[Ocorrencia ocorrenciaNome:@"Água e esgoto" descricao:@"Bueiro entupido soltando mal cheiro" endereco:@"Rua Idalino Moreti, Olímpico, São Caetano do Sul" data:@"18/02/2014" imagem:@"bueiro" latitude:-23.624140 longitude:-46.565723]];
+    [arrOcorrencias addObject:[Ocorrencia ocorrenciaNome:@"Árvores e matos" descricao:@"Árvore quebrada por moradores" endereco:@"Rua Gonzaga, Osvaldo Cruz, São Caetano do Sul" data:@"15/02/2014" imagem:@"arvore" latitude:-23.631768 longitude:-46.560574]];
     
     self.arrAnnotations = [NSMutableArray arrayWithCapacity:arrOcorrencias.count];
     for (Ocorrencia* ocorrencia in arrOcorrencias)

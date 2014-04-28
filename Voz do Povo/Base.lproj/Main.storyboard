@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZtE-us-Aeh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZtE-us-Aeh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -1019,34 +1019,6 @@
                                     <outlet property="delegate" destination="czh-l8-oWc" id="ze6-jN-vSu"/>
                                 </connections>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kL-fn-xBS">
-                                <rect key="frame" x="0.0" y="244" width="320" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Endereço" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="226" translatesAutoresizingMaskIntoConstraints="NO" id="Q39-v8-axu">
-                                        <rect key="frame" x="20" y="5" width="226" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EZ-9M-HUh">
-                                        <rect key="frame" x="254" y="6" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Ir">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tracaRota:" destination="czh-l8-oWc" eventType="touchUpInside" id="RlW-f8-NXR"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="vdP-fO-S6m"/>
-                                </constraints>
-                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxe-9h-vM1">
                                 <rect key="frame" x="20" y="468" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1075,7 +1047,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y2o-9u-DBK">
-                                <rect key="frame" x="20" y="295" width="116" height="116"/>
+                                <rect key="frame" x="20" y="276" width="116" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="116" id="3DQ-O9-yTq"/>
@@ -1083,7 +1055,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Inicio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TR5-0g-kro">
-                                <rect key="frame" x="144" y="295" width="156" height="21"/>
+                                <rect key="frame" x="144" y="276" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="DnV-9q-OR4"/>
@@ -1094,7 +1066,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Fim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IIj-1N-3J6">
-                                <rect key="frame" x="144" y="342" width="156" height="21"/>
+                                <rect key="frame" x="144" y="323" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="Qnf-mu-Yr1"/>
@@ -1105,7 +1077,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2n-2G-PQG">
-                                <rect key="frame" x="144" y="390" width="156" height="21"/>
+                                <rect key="frame" x="144" y="371" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="O8k-22-CuJ"/>
@@ -1120,34 +1092,29 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Y2o-9u-DBK" secondAttribute="centerX" constant="82" id="3tk-vR-vxb"/>
                             <constraint firstItem="F2n-2G-PQG" firstAttribute="bottom" secondItem="Y2o-9u-DBK" secondAttribute="bottom" id="HO1-rC-LTE"/>
-                            <constraint firstAttribute="trailing" secondItem="9kL-fn-xBS" secondAttribute="trailing" id="IEG-uo-0m1"/>
                             <constraint firstItem="SOV-t6-YEk" firstAttribute="top" secondItem="CYA-7Y-XAl" secondAttribute="top" id="KsA-sw-mwb"/>
-                            <constraint firstItem="Y2o-9u-DBK" firstAttribute="top" secondItem="9kL-fn-xBS" secondAttribute="bottom" constant="9" id="LhV-t9-KW4"/>
                             <constraint firstItem="SOV-t6-YEk" firstAttribute="leading" secondItem="CYA-7Y-XAl" secondAttribute="leading" id="OFQ-WJ-b0l"/>
                             <constraint firstItem="Zxe-9h-vM1" firstAttribute="top" secondItem="DgW-mH-H8X" secondAttribute="bottom" constant="8" id="PPu-72-g6P"/>
                             <constraint firstItem="Y2o-9u-DBK" firstAttribute="top" secondItem="TR5-0g-kro" secondAttribute="top" id="Puq-ls-m56"/>
                             <constraint firstAttribute="trailing" secondItem="SOV-t6-YEk" secondAttribute="trailing" id="REP-Cf-8fc"/>
-                            <constraint firstItem="DgW-mH-H8X" firstAttribute="top" secondItem="Y2o-9u-DBK" secondAttribute="bottom" constant="8" id="TDK-yR-b30"/>
+                            <constraint firstItem="DgW-mH-H8X" firstAttribute="top" secondItem="Y2o-9u-DBK" secondAttribute="bottom" constant="27" id="TDK-yR-b30"/>
                             <constraint firstAttribute="trailing" secondItem="F2n-2G-PQG" secondAttribute="trailing" constant="20" id="UYI-61-ch5"/>
                             <constraint firstAttribute="trailing" secondItem="TR5-0g-kro" secondAttribute="trailing" constant="20" id="VrA-fX-3HS"/>
                             <constraint firstItem="Sdl-Kx-tdo" firstAttribute="top" secondItem="Zxe-9h-vM1" secondAttribute="bottom" constant="20" id="ZPb-n4-gfB"/>
-                            <constraint firstItem="9kL-fn-xBS" firstAttribute="top" secondItem="SOV-t6-YEk" secondAttribute="bottom" id="azd-oj-mjM"/>
                             <constraint firstAttribute="trailing" secondItem="DgW-mH-H8X" secondAttribute="trailing" id="p5J-1K-VPB"/>
                             <constraint firstAttribute="trailing" secondItem="Zxe-9h-vM1" secondAttribute="trailing" constant="20" id="pMd-Ir-8JV"/>
+                            <constraint firstItem="Y2o-9u-DBK" firstAttribute="top" secondItem="SOV-t6-YEk" secondAttribute="bottom" constant="32" id="qh5-Ki-tsQ"/>
                             <constraint firstAttribute="trailing" secondItem="IIj-1N-3J6" secondAttribute="trailing" constant="20" id="tiD-Kd-C8e"/>
                             <constraint firstItem="Zxe-9h-vM1" firstAttribute="leading" secondItem="CYA-7Y-XAl" secondAttribute="leading" constant="20" id="vE0-Cx-MnF"/>
                             <constraint firstItem="IIj-1N-3J6" firstAttribute="centerY" secondItem="Y2o-9u-DBK" secondAttribute="centerY" constant="-0.5" id="zib-CC-f6A"/>
-                            <constraint firstItem="9kL-fn-xBS" firstAttribute="leading" secondItem="CYA-7Y-XAl" secondAttribute="leading" id="zuq-Fj-j23"/>
                             <constraint firstItem="DgW-mH-H8X" firstAttribute="leading" secondItem="CYA-7Y-XAl" secondAttribute="leading" id="zw4-vG-4uZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Obra" id="ZCZ-9K-6fd"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btnRota" destination="9EZ-9M-HUh" id="8nN-hJ-XB1"/>
                         <outlet property="imgView" destination="Y2o-9u-DBK" id="Vgc-mA-254"/>
                         <outlet property="lblData" destination="TR5-0g-kro" id="4rY-db-fRN"/>
-                        <outlet property="lblEndereco" destination="Q39-v8-axu" id="ptN-MN-vxZ"/>
                         <outlet property="lblNome" destination="Y3a-R7-ldM" id="qjm-Ln-gmn"/>
                         <outlet property="lblStatus" destination="F2n-2G-PQG" id="sky-ZA-8U4"/>
                         <outlet property="lblTermino" destination="IIj-1N-3J6" id="miv-21-BpG"/>

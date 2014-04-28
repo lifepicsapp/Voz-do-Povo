@@ -35,7 +35,6 @@
     self.lblData.text = [NSString stringWithFormat:@"Início: %@", obra.dataInicio];
     self.lblTermino.text = [NSString stringWithFormat:@"Término previsto: %@", obra.dataFim];
     self.lblStatus.text = [NSString stringWithFormat:@"Status: %@", obra.status];
-    self.lblEndereco.text = obra.endereco;
     self.txtDescricao.text = obra.descricao;
 }
 
@@ -43,12 +42,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Metodos IBAction
-
-- (IBAction)tracaRota:(UIButton *)sender {
-    [AppUtil rotaParaDestino:CLLocationCoordinate2DMake(self.annotation.ocorrencia.latitude, self.annotation.ocorrencia.longitude)];
 }
 
 #pragma mark - Metodos MapView delegate
