@@ -1,0 +1,10 @@
+PODS:
+  - HHPanningTableViewCell (2.0.1)
+
+DEPENDENCIES:
+  - HHPanningTableViewCell
+
+SPEC CHECKSUMS:
+  HHPanningTableViewCell: 3b320762f2c32330c45c8d325fe010bbe42bf8e6
+
+COCOAPODS: 0.32.1
